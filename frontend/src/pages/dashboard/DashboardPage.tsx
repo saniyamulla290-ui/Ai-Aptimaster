@@ -116,7 +116,7 @@ export default function DashboardPage() {
 
             {/* Stats cards */}
             <Grid container spacing={3} sx={{ mb: 4 }}>
-                <Grid item xs={12} sm={6} md={3}>
+                <Grid xs={12} sm={6} md={3}>
                     <Card sx={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', color: 'white' }}>
                         <CardContent>
                             <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
@@ -133,7 +133,7 @@ export default function DashboardPage() {
                     </Card>
                 </Grid>
 
-                <Grid item xs={12} sm={6} md={3}>
+                <Grid xs={12} sm={6} md={3}>
                     <Card sx={{ background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)', color: 'white' }}>
                         <CardContent>
                             <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
@@ -150,7 +150,7 @@ export default function DashboardPage() {
                     </Card>
                 </Grid>
 
-                <Grid item xs={12} sm={6} md={3}>
+                <Grid xs={12} sm={6} md={3}>
                     <Card sx={{ background: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)', color: 'white' }}>
                         <CardContent>
                             <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
@@ -167,7 +167,7 @@ export default function DashboardPage() {
                     </Card>
                 </Grid>
 
-                <Grid item xs={12} sm={6} md={3}>
+                <Grid xs={12} sm={6} md={3}>
                     <Card sx={{ background: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)', color: 'white' }}>
                         <CardContent>
                             <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
@@ -187,7 +187,7 @@ export default function DashboardPage() {
 
             <Grid container spacing={3}>
                 {/* Daily Target */}
-                <Grid item xs={12} md={6}>
+                <Grid xs={12} md={6}>
                     <Paper sx={{ p: 3, borderRadius: 3, height: '100%' }}>
                         <Typography variant="h6" gutterBottom sx={{ fontWeight: 'bold', display: 'flex', alignItems: 'center' }}>
                             <TimerIcon sx={{ mr: 1, color: 'primary.main' }} />
@@ -232,7 +232,7 @@ export default function DashboardPage() {
                 </Grid>
 
                 {/* Weak Areas */}
-                <Grid item xs={12} md={6}>
+                <Grid xs={12} md={6}>
                     <Paper sx={{ p: 3, borderRadius: 3, height: '100%' }}>
                         <Typography variant="h6" gutterBottom sx={{ fontWeight: 'bold', display: 'flex', alignItems: 'center' }}>
                             <TrendingUpIcon sx={{ mr: 1, color: 'warning.main' }} />
@@ -288,7 +288,7 @@ export default function DashboardPage() {
                 </Grid>
 
                 {/* Recent Sessions */}
-                <Grid item xs={12}>
+                <Grid xs={12}>
                     <Paper sx={{ p: 3, borderRadius: 3 }}>
                         <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 2 }}>
                             <Typography variant="h6" sx={{ fontWeight: 'bold', display: 'flex', alignItems: 'center' }}>
@@ -303,7 +303,7 @@ export default function DashboardPage() {
                         {data?.recent_sessions && data.recent_sessions.length > 0 ? (
                             <Grid container spacing={2}>
                                 {data.recent_sessions.map((session: any, index: number) => (
-                                    <Grid item xs={12} sm={6} md={4} key={index}>
+                                    <Grid xs={12} sm={6} md={4} key={index}>
                                         <Card variant="outlined" sx={{ borderRadius: 2 }}>
                                             <CardContent>
                                                 <Typography variant="subtitle2" color="text.secondary" gutterBottom>

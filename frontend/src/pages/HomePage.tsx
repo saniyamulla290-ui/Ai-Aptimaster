@@ -150,7 +150,7 @@ export default function HomePage() {
             </Typography>
             <Grid container spacing={4} sx={{ mb: 8 }}>
                 {features.map((feature, index) => (
-                    <Grid item xs={12} md={6} lg={3} key={index}>
+                    <Grid xs={12} md={6} lg={3} key={index}>
                         <Card
                             sx={{
                                 height: '100%',
@@ -185,7 +185,7 @@ export default function HomePage() {
             {/* Stats Section */}
             <Paper sx={{ p: 4, mb: 8, borderRadius: 4 }}>
                 <Grid container spacing={4} alignItems="center">
-                    <Grid item xs={12} md={6}>
+                    <Grid xs={12} md={6}>
                         <Typography variant="h4" component="h3" gutterBottom>
                             Join 10,000+ Students Already Improving Their Skills
                         </Typography>
@@ -201,7 +201,7 @@ export default function HomePage() {
                             Start Your Journey
                         </Button>
                     </Grid>
-                    <Grid item xs={12} md={6}>
+                    <Grid xs={12} md={6}>
                         <Grid container spacing={2}>
                             {[
                                 { label: 'Questions Solved', value: '500K+' },
@@ -209,7 +209,7 @@ export default function HomePage() {
                                 { label: 'Placement Success Rate', value: '85%' },
                                 { label: 'Active Users', value: '10K+' },
                             ].map((stat, index) => (
-                                <Grid item xs={6} key={index}>
+                                <Grid xs={6} key={index}>
                                     <Paper
                                         sx={{
                                             p: 3,

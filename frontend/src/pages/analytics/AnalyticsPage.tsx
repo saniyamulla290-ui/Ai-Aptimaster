@@ -83,7 +83,7 @@ export default function AnalyticsPage() {
                 <Skeleton variant="text" width="40%" height={50} />
                 <Grid container spacing={3} sx={{ mt: 1 }}>
                     {[1, 2, 3, 4].map((i) => (
-                        <Grid item xs={12} sm={6} md={3} key={i}>
+                        <Grid xs={12} sm={6} md={3} key={i}>
                             <Skeleton variant="rounded" height={120} />
                         </Grid>
                     ))}
@@ -119,7 +119,7 @@ export default function AnalyticsPage() {
                     { label: 'Avg Accuracy', value: `${avgAccuracy}%`, icon: <TrendingUpIcon />, gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)' },
                     { label: 'Total Correct', value: totalCorrect, icon: <CheckIcon />, gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)' },
                 ].map((stat, i) => (
-                    <Grid item xs={6} md={3} key={i}>
+                    <Grid xs={6} md={3} key={i}>
                         <Card sx={{ background: stat.gradient, color: 'white', borderRadius: 3 }}>
                             <CardContent>
                                 <Box sx={{ display: 'flex', alignItems: 'center', mb: 1, opacity: 0.9 }}>
@@ -178,7 +178,7 @@ export default function AnalyticsPage() {
 
                 <Grid container spacing={2}>
                     {topicAnalysis.map((topic, i) => (
-                        <Grid item xs={12} sm={6} key={i}>
+                        <Grid xs={12} sm={6} key={i}>
                             <Card variant="outlined" sx={{ borderRadius: 2 }}>
                                 <CardContent>
                                     <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 1 }}>

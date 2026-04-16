@@ -124,11 +124,11 @@ export default function CompaniesPage() {
                 <Grid container spacing={3}>
                     {loading ? (
                         [1, 2, 3, 4, 5, 6].map((i) => (
-                            <Grid item xs={12} sm={6} md={4} key={i}><Skeleton variant="rounded" height={220} /></Grid>
+                            <Grid xs={12} sm={6} md={4} key={i}><Skeleton variant="rounded" height={220} /></Grid>
                         ))
                     ) : (
                         filteredCompanies.map((company) => (
-                            <Grid item xs={12} sm={6} md={4} key={company._id}>
+                            <Grid xs={12} sm={6} md={4} key={company._id}>
                                 <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column', borderRadius: 3, transition: 'transform 0.2s, box-shadow 0.2s', '&:hover': { transform: 'translateY(-4px)', boxShadow: 4 } }}>
                                     <CardContent sx={{ flexGrow: 1 }}>
                                         <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
@@ -181,7 +181,7 @@ export default function CompaniesPage() {
             {activeTab === 'hiring' && (
                 <Grid container spacing={3}>
                     {hiringUpdates.map((update, index) => (
-                        <Grid item xs={12} md={6} key={index}>
+                        <Grid xs={12} md={6} key={index}>
                             <Card sx={{ borderRadius: 3, borderLeft: '4px solid', borderColor: daysUntil(update.registration_deadline) <= 3 ? 'error.main' : daysUntil(update.registration_deadline) <= 7 ? 'warning.main' : 'success.main' }}>
                                 <CardContent>
                                     <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', mb: 2 }}>

@@ -146,7 +146,7 @@ export default function ProfilePage() {
 
             <Grid container spacing={3}>
                 {/* Profile Card */}
-                <Grid item xs={12} md={4}>
+                <Grid xs={12} md={4}>
                     <Paper sx={{ p: 4, borderRadius: 3, textAlign: 'center' }}>
                         <Avatar
                             sx={{ width: 100, height: 100, mx: 'auto', mb: 2, bgcolor: 'primary.main', fontSize: 40 }}
@@ -164,19 +164,19 @@ export default function ProfilePage() {
                         <Divider sx={{ my: 2 }} />
 
                         <Grid container spacing={2}>
-                            <Grid item xs={4}>
+                            <Grid xs={4}>
                                 <Typography variant="h5" color="primary" sx={{ fontWeight: 'bold' }}>
                                     {user?.streak || 0}
                                 </Typography>
                                 <Typography variant="caption" color="text.secondary">Streak</Typography>
                             </Grid>
-                            <Grid item xs={4}>
+                            <Grid xs={4}>
                                 <Typography variant="h5" color="secondary" sx={{ fontWeight: 'bold' }}>
                                     {user?.total_points || 0}
                                 </Typography>
                                 <Typography variant="caption" color="text.secondary">Points</Typography>
                             </Grid>
-                            <Grid item xs={4}>
+                            <Grid xs={4}>
                                 <Typography variant="h5" color="success.main" sx={{ fontWeight: 'bold' }}>
                                     {user?.level || 1}
                                 </Typography>
@@ -195,7 +195,7 @@ export default function ProfilePage() {
                 </Grid>
 
                 {/* Settings */}
-                <Grid item xs={12} md={8}>
+                <Grid xs={12} md={8}>
                     <Paper sx={{ p: 4, borderRadius: 3, mb: 3 }}>
                         <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 3 }}>
                             <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
@@ -214,7 +214,7 @@ export default function ProfilePage() {
                         </Box>
 
                         <Grid container spacing={3}>
-                            <Grid item xs={12} sm={6}>
+                            <Grid xs={12} sm={6}>
                                 <TextField
                                     fullWidth
                                     label="Full Name"
@@ -223,10 +223,10 @@ export default function ProfilePage() {
                                     disabled={!editing}
                                 />
                             </Grid>
-                            <Grid item xs={12} sm={6}>
+                            <Grid xs={12} sm={6}>
                                 <TextField fullWidth label="Email" value={user?.email || ''} disabled />
                             </Grid>
-                            <Grid item xs={12} sm={6}>
+                            <Grid xs={12} sm={6}>
                                 <FormControl fullWidth disabled={!editing}>
                                     <InputLabel>Branch</InputLabel>
                                     <Select value={formData.branch} label="Branch" onChange={(e) => setFormData({ ...formData, branch: e.target.value })}>
@@ -234,7 +234,7 @@ export default function ProfilePage() {
                                     </Select>
                                 </FormControl>
                             </Grid>
-                            <Grid item xs={12} sm={6}>
+                            <Grid xs={12} sm={6}>
                                 <FormControl fullWidth disabled={!editing}>
                                     <InputLabel>Daily Target</InputLabel>
                                     <Select value={formData.daily_target} label="Daily Target" onChange={(e) => setFormData({ ...formData, daily_target: Number(e.target.value) })}>
@@ -244,13 +244,13 @@ export default function ProfilePage() {
                                     </Select>
                                 </FormControl>
                             </Grid>
-                            <Grid item xs={12} sm={6}>
+                            <Grid xs={12} sm={6}>
                                 <FormControlLabel
                                     control={<Switch checked={formData.notifications} onChange={(e) => setFormData({ ...formData, notifications: e.target.checked })} disabled={!editing} />}
                                     label="Email Notifications"
                                 />
                             </Grid>
-                            <Grid item xs={12} sm={6}>
+                            <Grid xs={12} sm={6}>
                                 <FormControl fullWidth disabled={!editing}>
                                     <InputLabel>Theme</InputLabel>
                                     <Select value={formData.theme} label="Theme" onChange={(e) => setFormData({ ...formData, theme: e.target.value })}>

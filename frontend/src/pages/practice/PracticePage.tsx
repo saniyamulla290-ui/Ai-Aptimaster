@@ -215,10 +215,10 @@ export default function PracticePage() {
                 </Typography>
 
                 <Grid container spacing={3}>
-                    <Grid item xs={12} md={8}>
+                    <Grid xs={12} md={8}>
                         <Paper sx={{ p: 4, borderRadius: 3 }}>
                             <Grid container spacing={3}>
-                                <Grid item xs={12} sm={6}>
+                                <Grid xs={12} sm={6}>
                                     <FormControl fullWidth>
                                         <InputLabel>Topic</InputLabel>
                                         <Select
@@ -234,7 +234,7 @@ export default function PracticePage() {
                                     </FormControl>
                                 </Grid>
 
-                                <Grid item xs={12} sm={6}>
+                                <Grid xs={12} sm={6}>
                                     <FormControl fullWidth>
                                         <InputLabel>Difficulty</InputLabel>
                                         <Select
@@ -251,7 +251,7 @@ export default function PracticePage() {
                                     </FormControl>
                                 </Grid>
 
-                                <Grid item xs={12} sm={6}>
+                                <Grid xs={12} sm={6}>
                                     <FormControl fullWidth>
                                         <InputLabel>Number of Questions</InputLabel>
                                         <Select
@@ -266,7 +266,7 @@ export default function PracticePage() {
                                     </FormControl>
                                 </Grid>
 
-                                <Grid item xs={12} sm={6}>
+                                <Grid xs={12} sm={6}>
                                     <Paper variant="outlined" sx={{ p: 2, textAlign: 'center', borderRadius: 2 }}>
                                         <Typography variant="body2" color="text.secondary">Time Limit</Typography>
                                         <Typography variant="h5" color="primary" sx={{ fontWeight: 'bold' }}>
@@ -290,7 +290,7 @@ export default function PracticePage() {
                         </Paper>
                     </Grid>
 
-                    <Grid item xs={12} md={4}>
+                    <Grid xs={12} md={4}>
                         <Paper sx={{ p: 3, borderRadius: 3, background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', color: 'white' }}>
                             <Typography variant="h6" gutterBottom sx={{ fontWeight: 'bold' }}>
                                 Quick Practice
@@ -558,7 +558,7 @@ export default function PracticePage() {
                             { label: 'Skipped', value: sessionResults.skipped, color: 'warning.main' },
                             { label: 'Points', value: `+${sessionResults.points_earned}`, color: 'primary.main' },
                         ].map((stat) => (
-                            <Grid item xs={3} key={stat.label}>
+                            <Grid xs={3} key={stat.label}>
                                 <Typography variant="h4" sx={{ color: stat.color, fontWeight: 'bold' }}>
                                     {stat.value}
                                 </Typography>

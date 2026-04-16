@@ -309,7 +309,7 @@ export const getDailyTarget = async (req: AuthRequest, res: Response) => {
         }
 
         const targetData = {
-            ...todayTarget.toObject(),
+            ...(todayTarget as any).toObject(),
             is_completed: todayTarget.completed_questions >= todayTarget.target_questions,
             progress_percentage: Math.min(
                 100,
